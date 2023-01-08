@@ -2,7 +2,7 @@ import csv
 
 
 ##### read the csv file and print the results
-csv_path="./PyBank/Resources/budget_data.csv"
+csv_path="./Resources/budget_data.csv"
 count_row=0
 net=0
 change_v=0
@@ -69,7 +69,7 @@ with open (csv_path) as csv_file:
 
 
 ### write the results to a text file
-text_path="./PyBank/analysis/export.txt"
+text_path="./analysis/export.txt"
 lines=[f"Total Months: {count_row}", f"Total: {net}", f"Average Change: {avg_change}",
  f"Greatest Increase in Profits: {greatest_Increase_change_index} (${greatest_Increase_change})",
  f"Greatest Decrease in Profits: {greatest_Decrease_change_index} (${greatest_Decrease_change})"  ]

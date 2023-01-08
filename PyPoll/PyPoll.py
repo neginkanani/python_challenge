@@ -1,6 +1,6 @@
 
 import csv
-csv_path= "./PyPoll/Resources/election_data.csv"
+csv_path= "./Resources/election_data.csv"
 Ballot_ID=[]
 County=[]
 Candidate=[]
@@ -66,7 +66,7 @@ output.append("--------------")
 
 
 # export the results to a text file
-text_path="./PyPoll/analysis/export.txt"
+text_path="./analysis/export.txt"
 with open(text_path, 'w') as text_file:
     text_file.write('\n'.join(output))
     
